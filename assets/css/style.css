@@ -1,0 +1,107 @@
+body{
+	font-family: 'Major Mono Display', monospace;
+	background-color: rgb(220,220,220);
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+form{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	background-color: #f8e1f4;
+	border-radius: 30px;
+}
+
+fieldset{
+	padding-right: 0;
+}
+
+
+legend{
+	font-family: 'Monoton', cursive;
+	font-size: 1.5em;
+}
+
+#top{
+	padding-bottom: 10px;
+	padding-top:10px;
+	background-color: #8f71ff;
+	border-radius: 32px 32px 0px 0px;
+}
+
+#f1{
+	background-color: #efa8e4;
+}
+
+#f2{
+	background-color: #97e5ef;
+}
+
+#f3{
+	background-color: #fff0f5;
+}
+
+#allForm{
+	box-shadow: 0px 0px 40px 10px #888888;
+	background-color: #f8e1f4;
+	border-radius: 32px;
+ 	width: 50vw;
+ 	margin: auto;
+ 	margin-top: 50px;
+ 	margin-bottom: 50px;	
+}
+
+@media only screen and (min-width: 756px) and (max-width: 1024px){
+	#allForm{
+		width: 70vw;
+	}
+}
+
+@media only screen and (min-width: 606px) and (max-width: 755px){
+	body{
+		font-size: 12px;
+	}
+	form{
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+	#allForm{
+		width: 85vw;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 605px){
+	body{
+		font-size: 10px;
+	}
+	form{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#allForm{
+		margin-top: 20px;
+ 		margin-bottom: 20px;
+		width: 85vw;
+	}
+}
+
+@media only screen and (max-width: 499px){
+	body{
+		font-size: 8px;
+	}
+	form{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#allForm{
+		width: 97vw;
+		margin-top: 20px;
+ 		margin-bottom: 20px;
+	}
+}
+

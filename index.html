@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="allForm">
+		<div id="top">
+			<h1>Register Form</h1>
+		</div>
+		<form>
+			<fieldset id="f1">
+				<legend>Pasul1: Detalii utlizator</legend>
+			
+				<label for="img">Importa imagine:</label>
+				<input type="file" accept="image" name="img">
+				<br><br>
+
+				<label for="nume">Nume:</label>
+				<input type="text" name="nume" placeholder="Introdu numele">
+				<br><br>
+
+				<label for="prenume">Prenume:</label>
+				<input type="text" name="prenume" placeholder="Introdu prenumele">
+				<br>
+
+				<p>Sex:</p>
+				<label for="S">Masculin</label>
+				<input type="radio" name="S" value="Masculin">
+				<label for="S">Feminin</label>
+				<input type="radio" name="S" value="Feminin">
+				<br><br>
+
+				<label for="dataNasterii">Data Nasterii:</label>
+				<input type="date" name="dataNasterii">
+				<br><br>
+
+				<label for="cnp">CNP:</label>
+				<input type="text" name="cnp">
+				<br><br>
+
+				<button>Next:</button>
+
+			</fieldset>
+			<fieldset id="f2">
+				<legend>Pasul2: Detalii contact</legend>
+				
+				<label for="nrTel">Numar telefon:</label>
+				<input type="tel" name="nrTel" placeholder="07xx-xxx-xxx" pattern="[0]{1}[7]{1}[0-9]{2}-[0-9]{3}-[0-9]{3}">
+				<br><br>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email">
+				<br><br>
+
+				<label for="judet" required>Judet:</label>
+				<select id="judet">
+					<option>-</option>
+					<option value="Alba">Alba</option>
+					<option value="Arad">Arad</option>
+					<option value="Argeș">Argeș</option>
+				</select>
+				<br><br>
+
+				<label for="oras" required>Oras:</label>
+				<select id="oras">
+					<option>-</option>
+					<option value="Iași">Iași</option>
+					<option value="Craiova">Craiova</option>
+					<option value="Brașov">Brașov</option>
+				</select>
+				<br><br>
+
+				<label for="adresa" >Adresa:</label>
+				<textarea name="adresa" placeholder="Adresa" rows="4"></textarea>
+				<br><br>
+
+				<label for="codP">Cod Postal:</label>
+				<input type="text" name="codP">
+				<br><br>
+
+				<button>Next:</button>
+
+			</fieldset>
+			<fieldset id="f3">
+				<legend>Pasul3:Credentiale</legend>
+
+				<label for="pwd">Parola:</label>
+				<input type="password" name="pwd">
+				<br><br>
+
+				<label for="pwd">Confirmati Parola:</label>
+				<input type="password" name="pwd">
+				<br><br>
+
+				<input type="checkbox" name="nwsl" value="True">
+				<label for="nwsl">Doresc sa ma abonez la newsletter:</label>
+				<br><br>
+
+				<input type="checkbox" name="tos" value="True">
+				<label for="tos">Sunt de acord cu Termenii & Conditiile:</label>
+				<br><br>
+
+				<input type="submit" value="Inregistrare">
+
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
